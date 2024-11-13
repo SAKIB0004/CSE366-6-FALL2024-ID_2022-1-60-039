@@ -57,7 +57,7 @@ while running:
     # Display the agent's position as text
     agent_position = agent.get_position()
     position_text = font.render(f"Position: {agent_position}", True, TEXT_COLOR)
-    screen.blit(position_text, (10, 10))
+    screen.blit(position_text, (0, 0))
 
     # Flip the display
     pygame.display.flip()
