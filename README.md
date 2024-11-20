@@ -24,3 +24,13 @@ May take longer to find paths because it does not prioritize nodes based on prox
 Total path cost is optimal in terms of distance traveled, but might involve exploring more nodes compared to A*.
 Observation during the simulation:
 When barriers or obstacles complicate direct paths, UCS often explores more alternatives than A*, which relies on heuristic guidance to reduce unnecessary exploration.
+
+
+Challenges Faced and Their Resolutions
+Challenge 1: Synchronizing simulation logic between agents.
+Resolution: Both agents follow similar move and find_path_to methods, but their pathfinding algorithms were separated to prevent interference. They share the same environment for consistency.
+
+Challenge 2: Handling real-time updates for tasks and barriers.
+Resolution: Used a backup of the environment's initial state and restored it for each new simulation using deep copies, ensuring repeatable and consistent simulations.
+
+
