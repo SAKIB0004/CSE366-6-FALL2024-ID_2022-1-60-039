@@ -30,6 +30,7 @@ When barriers or obstacles complicate direct paths, UCS often explores more alte
 
 
 ***Challenges Faced and Their Resolutions***
+
 -Challenge 1: Synchronizing simulation logic between agents.
 Resolution: Both agents follow similar move and find_path_to methods, but their pathfinding algorithms were separated to prevent interference. They share the same environment for consistency.
 
