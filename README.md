@@ -11,3 +11,16 @@ Click on the A Search* button to start Agent1's simulation.
 Click on the UCS Search button to start Agent2's simulation.
 The agents will navigate the grid to complete tasks while avoiding barriers.
 
+Observed Differences in Path Costs Between UCS and A*
+A* (Agent1):
+
+Uses the Manhattan distance as a heuristic for guiding path selection.
+Considers both path cost and estimated distance to the target, potentially finding shorter paths more quickly than UCS.
+Total path cost may be slightly lower in certain cases because of the heuristic's guidance.
+UCS (Agent2):
+
+Uniform-cost search focuses solely on the actual path cost, without considering estimated distances.
+May take longer to find paths because it does not prioritize nodes based on proximity to the target.
+Total path cost is optimal in terms of distance traveled, but might involve exploring more nodes compared to A*.
+Observation during the simulation:
+When barriers or obstacles complicate direct paths, UCS often explores more alternatives than A*, which relies on heuristic guidance to reduce unnecessary exploration.
