@@ -1,4 +1,4 @@
-#To run the simulation:
+# To run the simulation:
 
 Ensure Python and Pygame are installed on your system.
 Save the provided Python scripts (agent1.py, agent2.py, environment.py, and run.py) in the same directory.
