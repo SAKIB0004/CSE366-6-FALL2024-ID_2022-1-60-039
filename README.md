@@ -11,9 +11,9 @@ Click on the **A* Search** button to start Agent1's simulation.
 Click on the **UCS Search** button to start Agent2's simulation.
 The agents will navigate the grid to complete tasks while avoiding barriers.
 
-***Observed Differences in Path Costs Between A* and UCS ***
+**Observed Differences in Path Costs Between A* and UCS *
 
-**A* (Agent1):**
+**A* (Agent1):*
 
 -Uses the Manhattan distance as a heuristic for guiding path selection.
 -Considers both path cost and estimated distance to the target, potentially finding shorter paths more quickly than UCS.
